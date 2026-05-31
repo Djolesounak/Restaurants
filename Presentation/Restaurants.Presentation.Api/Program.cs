@@ -47,6 +47,9 @@ try
 catch (Exception exception)
 {
     Log.Fatal(exception, "Application fail starting");
+    Console.WriteLine("ERREUR : " + exception.Message);
+    Console.WriteLine("DETAIL : " + exception.InnerException?.Message);
+    Console.ReadLine();
 }
 finally
 {
