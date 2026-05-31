@@ -1,6 +1,9 @@
 services:
   restaurants.presentation.api:
-    image: djolesounak/restaurant-api:latest
+    image: restaurants.presentation.api
+    build:
+      context: .
+      dockerfile: Presentation/Restaurants.Presentation.Api/Dockerfile
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ConnectionStrings__RestaurantsDb=Server=sqlserver-container;Database=RestaurantDb;User Id=sa;Password=restaurantDb123!;Trusted_Connection=false;MultipleActiveResultSets=true;Encrypt=false;
