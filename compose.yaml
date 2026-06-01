@@ -1,6 +1,6 @@
 services:
   restaurants.presentation.api:
-    image: djolesounak/restaurant-api:sha-dac990d
+    image: djolesounak/restaurant-api:sha-2aef3d0
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ConnectionStrings__RestaurantsDb=Server=sqlserver-container;Database=RestaurantDb;User Id=sa;Password=restaurantDb123!;Trusted_Connection=false;MultipleActiveResultSets=true;Encrypt=false;
